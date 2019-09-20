@@ -3,7 +3,7 @@
 mkdir -p "build"
 
 cd openssl
-bash build.sh
+bash build.sh verbose
 if [ $? -ne 0 ]; then
 	echo "Error: Build openssl"
 	exit 1
