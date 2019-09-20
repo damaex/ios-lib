@@ -22,7 +22,6 @@ OPENSSL_CONFIGURE_OPTIONS="no-pic no-idea no-camellia \
                             no-dsa no-tls1 \
                             no-rfc3779 no-whirlpool no-srp \
                             no-mdc2 no-engine \
-							no-apps \
                             no-comp no-hw no-srtp -fPIC"
 
 
@@ -111,6 +110,13 @@ do
 
     # add -isysroot to CC=
     sed -ie "s!^CFLAG=!CFLAG=-isysroot ${CROSS_TOP}/SDKs/${CROSS_SDK} -miphoneos-version-min=${MIN_IOS_VERSION} !" "Makefile"
+
+	if [ "$1" == "verbose" ];
+    then
+        make depend 
+    else
+        make depend  >> "${LOG}" 2>&1
+    fi
 
     if [ "$1" == "verbose" ];
     then
