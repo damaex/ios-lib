@@ -103,6 +103,8 @@ do
     if [ $? != 0 ];
     then
         echo "Problem while configure - Please check ${LOG}"
+		echo "$(<${LOG})"
+		
         exit 1
     fi
 
