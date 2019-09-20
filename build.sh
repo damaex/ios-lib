@@ -50,4 +50,4 @@ exit 1
 fi
 cd ..
 
-mv png/haru-ios.tar.gz build/
+mv haru/haru-ios.tar.gz build/
