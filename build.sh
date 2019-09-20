@@ -30,7 +30,7 @@ exit 1
 fi
 cd ..
 
-mv png/zip-ios.tar.gz build/
+mv zip/zip-ios.tar.gz build/
 
 cd png
 bash build.sh
