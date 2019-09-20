@@ -121,6 +121,8 @@ do
     if [ $? != 0 ];
     then
         echo "Problem while make - Please check ${LOG}"
+		echo "$(<${LOG})"
+		
         exit 1
     fi
 
