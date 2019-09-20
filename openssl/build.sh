@@ -92,13 +92,7 @@ do
 
     set +e
     INSTALL_DIR="${CURRENTPATH}/bin/${PLATFORM}-${ARCH}.sdk"
-    if [[ "$VERSION" =~ 1.0.0. ]]; then
-        ./Configure BSD-generic32 ${OPENSSL_CONFIGURE_OPTIONS} --prefix="${INSTALL_DIR}" --openssldir="${INSTALL_DIR}" > "${LOG}" 2>&1
-#elif [ "${ARCH}" == "x86_64" ]; then
-#       ./Configure darwin64-x86_64-cc ${OPENSSL_CONFIGURE_OPTIONS} --prefix="${INSTALL_DIR}" --openssldir="${INSTALL_DIR}" > "${LOG}" 2>&1
-    else
-        ./Configure iphoneos-cross ${OPENSSL_CONFIGURE_OPTIONS} --prefix="${INSTALL_DIR}" --openssldir="${INSTALL_DIR}" > "${LOG}" 2>&1
-    fi
+    ./Configure iphoneos-cross ${OPENSSL_CONFIGURE_OPTIONS} --prefix="${INSTALL_DIR}" --openssldir="${INSTALL_DIR}" > "${LOG}" 2>&1
 
     if [ $? != 0 ];
     then
