@@ -116,6 +116,7 @@ do
     then
         echo "Problem while make - Please check ${LOG}"
 		echo "$(<${LOG})"
+		perl configdata.pm --dump
 		
         exit 1
     fi
