@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+﻿#!/usr/bin/env bash
 
 #  Automatic build script for libssl and libcrypto
 #  for iPhoneOS and iPhoneSimulator
@@ -110,13 +110,6 @@ do
 
     # add -isysroot to CC=
     sed -ie "s!^CFLAG=!CFLAG=-isysroot ${CROSS_TOP}/SDKs/${CROSS_SDK} -miphoneos-version-min=${MIN_IOS_VERSION} !" "Makefile"
-
-	if [ "$1" == "verbose" ];
-    then
-        make depend 
-    else
-        make depend  >> "${LOG}" 2>&1
-    fi
 
     if [ "$1" == "verbose" ];
     then

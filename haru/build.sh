@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+﻿#!/usr/bin/env bash
 
 #  Automatic build script for libharu
 #  for iPhoneOS and iPhoneSimulator

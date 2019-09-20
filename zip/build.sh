@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+﻿#!/usr/bin/env bash
 
 #  Automatic build script for libzip
 #  for iPhoneOS and iPhoneSimulator
