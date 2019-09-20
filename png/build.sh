@@ -1,4 +1,4 @@
-﻿#!/usr/bin/env bash
+﻿#!/bin/bash
 
 #  Automatic build script for libpng
 #  for iPhoneOS and iPhoneSimulator
