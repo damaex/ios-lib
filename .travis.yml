@@ -1,4 +1,4 @@
-language: c
+language: cpp
 
 matrix:
   include:
@@ -9,7 +9,7 @@ matrix:
 
 script:
 - git submodule update --init --recursive
-- bash build.sh
+- ./build.sh
 
 deploy:
   provider: releases
