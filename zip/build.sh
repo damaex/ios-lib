@@ -1,4 +1,4 @@
-﻿#!/bin/bash
+#!/bin/bash
 
 #  Automatic build script for libzip
 #  for iPhoneOS and iPhoneSimulator

@@ -1,4 +1,4 @@
-﻿#!/bin/bash
+#!/bin/bash
 
 #  Automatic build script for libssl and libcrypto
 #  for iPhoneOS and iPhoneSimulator
