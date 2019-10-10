@@ -142,7 +142,7 @@ mkdir -p "${CURRENTPATH}/build/lib"
 
 if [ ! -e ${OPENSSL_VERSION}.tar.gz ]; then
     echo "Downloading ${OPENSSL_VERSION}.tar.gz"
-    curl -LO https://www.openssl.org/source/${OPENSSL_VERSION}.tar.gz
+    wget https://www.openssl.org/source/${OPENSSL_VERSION}.tar.gz
 else
     echo "Using ${OPENSSL_VERSION}.tar.gz"
 fi

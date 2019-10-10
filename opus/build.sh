@@ -55,7 +55,7 @@ esac
 set -e
 if [ ! -e opus-${VERSION}.tar.gz ]; then
     echo "Downloading opus-${VERSION}.tar.gz"
-    curl -O https://archive.mozilla.org/pub/opus/opus-${VERSION}.tar.gz
+    wget https://archive.mozilla.org/pub/opus/opus-${VERSION}.tar.gz
 else
     echo "Using opus-${VERSION}.tar.gz"
 fi
