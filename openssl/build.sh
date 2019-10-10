@@ -21,7 +21,7 @@ OPENSSL_CONFIGURE_OPTIONS="no-pic no-idea no-camellia \
                             no-md4 no-ssl3 \
                             no-dsa no-tls1 \
                             no-rfc3779 no-whirlpool no-srp \
-                            no-mdc2 no-engine \
+                            no-mdc2 no-engine no-ui-console \
                             no-comp no-hw no-srtp -fPIC"
 
 
