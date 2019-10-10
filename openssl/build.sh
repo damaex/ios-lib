@@ -74,7 +74,6 @@ do
     then
         PLATFORM="iPhoneSimulator"
     else
-        sed -ie "s!static volatile sig_atomic_t intr_signal;!static volatile intr_signal;!" "crypto/ui/ui_openssl.c"
         PLATFORM="iPhoneOS"
     fi
 
@@ -103,13 +102,13 @@ do
     fi
 
     # add -isysroot to CC=
-    sed -ie "s!^CFLAG=!CFLAG=-isysroot ${CROSS_TOP}/SDKs/${CROSS_SDK} -miphoneos-version-min=${MIN_IOS_VERSION} !" "Makefile"
+    sed -ie "s!^CFLAGS=!CFLAGS=-isysroot ${CROSS_TOP}/SDKs/${CROSS_SDK} -miphoneos-version-min=${MIN_IOS_VERSION} !" "Makefile"
 
     if [ "$1" == "verbose" ];
     then
-        make
+        make -j $(sysctl -n hw.ncpu)
     else
-        make >> "${LOG}" 2>&1
+        make -j $(sysctl -n hw.ncpu) >> "${LOG}" 2>&1
     fi
 
     if [ $? != 0 ];
