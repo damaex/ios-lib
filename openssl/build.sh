@@ -107,9 +107,9 @@ do
 
     if [ "$1" == "verbose" ];
     then
-        make -j$(sysctl -n hw.ncpu)
+        make
     else
-        make -j$(sysctl -n hw.ncpu) >> "${LOG}" 2>&1
+        make >> "${LOG}" 2>&1
     fi
 
     if [ $? != 0 ];
