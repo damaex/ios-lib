@@ -2,10 +2,8 @@ language: cpp
 
 matrix:
   include:
-#    - os: osx
-#      osx_image: xcode11
     - os: osx
-      osx_image: xcode10.3
+      osx_image: xcode11
 
 script:
 - git submodule update --init --recursive
