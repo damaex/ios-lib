@@ -92,7 +92,7 @@ do
 
     set +e
     INSTALL_DIR="${CURRENTPATH}/bin/${PLATFORM}-${ARCH}.sdk"
-    ./Configure iphoneos-cross ${OPENSSL_CONFIGURE_OPTIONS} --prefix="${INSTALL_DIR}" --openssldir="${INSTALL_DIR}" > "${LOG}" 2>&1
+    ./Configure iphoneos-cross ${OPENSSL_CONFIGURE_OPTIONS} --prefix="${INSTALL_DIR}" > "${LOG}" 2>&1
 
     if [ $? != 0 ];
     then
