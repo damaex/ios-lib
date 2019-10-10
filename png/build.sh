@@ -51,7 +51,7 @@ esac
 set -e
 if [ ! -e png-${VERSION}.tar.gz ]; then
     echo "Downloading png-${VERSION}.tar.gz"
-    wget https://downloads.sourceforge.net/project/libpng/libpng16/${VERSION}/libpng-${VERSION}.tar.gz
+    curl -O -L -s https://downloads.sourceforge.net/project/libpng/libpng16/${VERSION}/libpng-${VERSION}.tar.gz
 else
     echo "Using png-${VERSION}.tar.gz"
 fi

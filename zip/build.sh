@@ -53,7 +53,7 @@ esac
 set -e
 if [ ! -e zip-${VERSION}.tar.gz ]; then
     echo "Downloading zip-${VERSION}.tar.gz"
-    wget https://libzip.org/download/libzip-${VERSION}.tar.gz
+    curl -O -L -s https://libzip.org/download/libzip-${VERSION}.tar.gz
 else
     echo "Using opus-${VERSION}.tar.gz"
 fi

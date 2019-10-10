@@ -18,7 +18,6 @@ architectures: `i386`, `x86_64`, `armv7`, `armv7s`, `arm64`, `arm64e`
 ## requirements
 - XCode
 - cmake
-- wget
 
 ## build
 ```bash
