@@ -47,7 +47,7 @@ case $CURRENTPATH in
 esac
 
 set -e
-if [ ! -e png-${VERSION}.tar.gz ]; then
+if [ ! -e RELEASE_${VERSION}.tar.gz ]; then
     echo "Downloading libharu-RELEASE_${VERSION}.tar.gz"
     curl -O -L -s https://github.com/libharu/libharu/archive/RELEASE_${VERSION}.tar.gz
 else
