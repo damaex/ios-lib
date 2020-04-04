@@ -9,9 +9,9 @@ architectures: `i386`, `x86_64`, `armv7`, `armv7s`, `arm64`, `arm64e`
 
 | library | version |
 | ------- | ------- |
-| openssl | 1.1.1d  |
+| openssl | 1.1.1f  |
 | opus    | 1.3.1   |
-| libzip  | 1.5.2   |
+| libzip  | 1.6.1   |
 | libpng  | 1.6.37  |
 | libharu | 2.3.0   |
 
