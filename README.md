@@ -11,7 +11,7 @@ architectures: `i386`, `x86_64`, `armv7`, `armv7s`, `arm64`, `arm64e`
 | ------- | ------- |
 | openssl | 1.1.1g  |
 | opus    | 1.3.1   |
-| libzip  | 1.6.1   |
+| libzip  | 1.7.3   |
 | libpng  | 1.6.37  |
 | libharu | 2.3.0   |
 
