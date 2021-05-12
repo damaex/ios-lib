@@ -114,7 +114,7 @@ do
         exit 1
     fi
 
-    cmake --build . --config Release --target install  >> "${LOG}" 2>&1
+    cmake --build . --parallel $(nproc) --config Release --target install  >> "${LOG}" 2>&1
 
     if [ $? != 0 ];
     then
