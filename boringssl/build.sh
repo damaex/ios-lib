@@ -100,7 +100,7 @@ do
         exit 1
     fi
 
-    cmake --build . --parallel $(nproc) --config Release >> "${LOG}" 2>&1
+    cmake --build . --parallel $(sysctl -n hw.ncpu) --config Release >> "${LOG}" 2>&1
 
     if [ $? != 0 ];
     then
