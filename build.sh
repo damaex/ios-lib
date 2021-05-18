@@ -12,6 +12,16 @@ cd ..
 
 mv openssl/openssl-ios.tar.gz build/
 
+cd boringssl
+./build.sh
+if [ $? -ne 0 ]; then
+	echo "Error: Build boringssl"
+	exit 1
+fi
+cd ..
+
+mv boringssl/boringssl-ios.tar.gz build/
+
 cd opus
 ./build.sh
 if [ $? -ne 0 ]; then

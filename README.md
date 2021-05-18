@@ -7,13 +7,14 @@ architectures: `i386`, `x86_64`, `armv7`, `armv7s`, `arm64`, `arm64e`
 
 ## libraries
 
-| library | version |
-| ------- | ------- |
-| openssl | 1.1.1k  |
-| opus    | 1.3.1   |
-| libzip  | 1.7.3   |
-| libpng  | 1.6.37  |
-| libharu | 2.3.0   |
+| library   | version                                  |
+| --------- | ---------------------------------------- |
+| openssl   | 1.1.1k                                   |
+| boringssl | ddecaabdc8c950d1417ed69785ac17c3400bae4c |
+| opus      | 1.3.1                                    |
+| libzip    | 1.7.3                                    |
+| libpng    | 1.6.37                                   |
+| libharu   | 2.3.0                                    |
 
 ## requirements
 - XCode
