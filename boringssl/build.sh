@@ -133,16 +133,17 @@ lipo -create ${BUILD_BASE_PATH}/iphonesimulator-i386.sdk/crypto/libcrypto.a \
 mkdir -p ${BINARY_PATH}/include
 cp -R ${SRC_PATH}/include ${BINARY_PATH}/include/
 echo "Building done."
-echo "Cleaning up..."
-rm -rf ${SRC_PATH}
-rm -rf ${BINARY_PATH}
-rm -rf ${BUILD_BASE_PATH}
-echo "Done."
 
 lipo -info ${BINARY_PATH}/lib/libssl.a
 lipo -info ${BINARY_PATH}/lib/libcrypto.a
 
 cd ${BINARY_PATH}
 tar -czf ${CURRENTPATH}/boringssl-ios.tar.gz *
+
+echo "Cleaning up..."
+rm -rf ${SRC_PATH}
+rm -rf ${BINARY_PATH}
+rm -rf ${BUILD_BASE_PATH}
+echo "Done."
 
 cd ${CURRENTPATH}
