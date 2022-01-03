@@ -6,7 +6,7 @@
 ###########################################################################
 #  Change values here                                                     #
 #                                                                         #
-VERSION="3.0.0"                                                           #
+VERSION="3.0.1"                                                           #
 MIN_IOS_VERSION="9.0"                                                     #
 #                                                                         #
 ###########################################################################
@@ -29,7 +29,7 @@ OPENSSL_CONFIGURE_OPTIONS="-no-shared -no-tests \
                            -no-dsa -no-tls1 \
                            -no-rfc3779 -no-whirlpool -no-srp \
                            -no-mdc2 -no-engine -no-ui-console \
-                           -no-stdio -no-comp -no-hw -no-srtp -fPIC"
+                           -no-stdio -no-comp -no-srtp -fPIC"
 
 if [ ! -d "$DEVELOPER" ]; then
     echo "xcode path is not set correctly $DEVELOPER does not exist (most likely because of xcode > 4.3)"
